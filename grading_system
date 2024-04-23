@@ -1,0 +1,45 @@
+java = int(input("Enter Java marks: "))
+if 0 <= java <= 100:
+    print("Marks of Java =", java)
+else:
+    print("Invalid marks for Java")
+
+python = int(input("Enter Python marks: "))
+if 0 <= python <= 100:
+    print("Marks of Python =", python)
+else:
+    print("Invalid marks for Python")
+
+c = int(input("Enter C marks: "))
+if 0 <= c <= 100:
+    print("Marks of C =", c)
+else:
+    print("Invalid marks for C")
+
+html = int(input("Enter HTML marks: "))
+if 0 <= html <= 100:
+    print("Marks of HTML =", html)
+else:
+    print("Invalid marks for HTML")
+
+total_marks = java + python + c + html
+percentage = total_marks / 4
+
+print("Percentage:", percentage)
+
+if percentage > 95:
+    print("Grade: O")
+elif percentage > 90:
+    print("Grade: A+")
+elif percentage > 85:
+    print("Grade: A")
+elif percentage > 80:
+    print("Grade: B+")
+elif percentage > 70:
+    print("Grade: B")
+elif percentage > 60:
+    print("Grade: Good")
+elif percentage > 40:
+    print("Grade: Need to work hard")
+else:
+    print("Grade: Fail")
