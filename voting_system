@@ -1,0 +1,32 @@
+BJP = 0
+AAP = 0
+Congress = 0
+
+print("List of Parties")
+print("1. BJP")
+print("2. AAP")
+print("3. Congress")
+
+while True:
+    voter_choice = input("Press Respective Button To Vote Your Party OR Type done To Exit From Voting :")
+
+    if voter_choice.lower() == "done":
+        break  # Exit the voting loop
+
+    if voter_choice == "1":
+        BJP += 1
+        print("Vote cast for BJP")
+    elif voter_choice == "2":
+        AAP += 1
+        print("Vote cast for AAP")
+    elif voter_choice == "3":
+        Congress += 1
+        print("Vote cast for Congress")
+    else:
+        print("Invalid number. Please choose a valid Party")
+
+# Display voting results
+print("\nVoting Results:")
+print(f"Bjp: {BJP} vote(s)")
+print(f"AAP: {AAP} vote(s)")
+print(f"Congress: {Congress} vote(s)")
