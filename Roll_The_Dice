@@ -1,0 +1,21 @@
+import random
+
+def roll():
+    print("Welcome to the Dice Rolling Game!")
+    print("Press Enter to roll the dice. Type 'quit' to exit.")
+
+    while True:
+        user_input = input("Roll the dice? (Press Enter): ").strip().lower()
+
+        if user_input == 'quit':
+            print("Thanks for playing!")
+            break
+        
+        if user_input == '' or user_input == 'roll':
+            dice = random.randint(1, 6)
+            print(f"You rolled: {dice}")
+        else:
+            print("Invalid input. Press Enter to roll the dice or type 'quit' to exit.")
+
+roll()
+
